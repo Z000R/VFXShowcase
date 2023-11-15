@@ -208,7 +208,7 @@ VisualEffect:
       - m_Value: {x: -0, y: 0, z: 0}
         m_Name: LookAt_angles
         m_Overridden: 1
-      - m_Value: {x: 15.99, y: 7.11, z: -10.16}
+      - m_Value: {x: -1.757, y: 3.71, z: 11.066}
         m_Name: LookAt_position
         m_Overridden: 1
       - m_Value: {x: 2, y: 2, z: 2}
@@ -374,7 +374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418308396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.99, y: 7.11, z: -10.16}
+  m_LocalPosition: {x: -1.757, y: 3.71, z: 11.066}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
