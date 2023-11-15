@@ -27,7 +27,7 @@ Material:
   - TransparentBackface
   - RayTracingPrepass
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: _edge1
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -143,7 +143,7 @@ Material:
     - _AlphaRemapMax: 1
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
-    - _Amp: 0.289
+    - _Amp: 4.87
     - _Anisotropy: 0
     - _BlendMode: 0
     - _Boolean: 0
@@ -234,7 +234,7 @@ Material:
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
     - _SurfaceType: 0
-    - _Swaying_Amp: 0.05
+    - _Swaying_Amp: 0.02
     - _Swaying_Distance: 100
     - _Swaying_Frequency: 0.05
     - _Swaying_Speed: 10
@@ -250,6 +250,7 @@ Material:
     - _TransparentSortPriority: 0
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
+    - _Twirl_Strenght: 4.52
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
@@ -259,12 +260,13 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _edge1: 0.27
-    - _edge2: -1
-    - _offset: 70.4
+    - _edge1: 0.38
+    - _edge2: -5.25
+    - _offset: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
+    - _Center: {r: 0.06, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
@@ -273,6 +275,7 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
