@@ -30,6 +30,7 @@ Material:
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
   - _MASKMAP
+  - _MATERIAL_FEATURE_CLEAR_COAT
   - _MATERIAL_FEATURE_IRIDESCENCE
   - _NORMALMAP
   - _NORMALMAP_TANGENT_SPACE
@@ -196,7 +197,7 @@ Material:
     - _Anisotropy: 0
     - _BlendMode: 0
     - _BumpScale: 1
-    - _CoatMask: 0
+    - _CoatMask: 0.39
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
@@ -236,8 +237,8 @@ Material:
     - _HeightTessCenter: 0.5
     - _InvTilingScale: 1
     - _Ior: 1.5
-    - _IridescenceMask: 0.5
-    - _IridescenceThickness: 0.525
+    - _IridescenceMask: 0.214
+    - _IridescenceThickness: 0.336
     - _LinkDetailsWithBase: 0
     - _MaterialID: 3
     - _Metallic: 1

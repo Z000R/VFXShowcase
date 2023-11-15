@@ -145,6 +145,15 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+            if (Input.GetKeyDown(KeyCode.E)) 
+            {
+                this.GetComponent<Animator>().SetTrigger("Attack");
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                this.GetComponent<Animator>().SetTrigger("SpinAttack");
+            }
+
         }
 
         private void LateUpdate()
