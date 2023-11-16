@@ -143,7 +143,8 @@ Material:
     - _AlphaRemapMax: 1
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
-    - _Amp: 4.87
+    - _Amp: 10
+    - _Amp_Factor: 1.2
     - _Anisotropy: 0
     - _BlendMode: 0
     - _Boolean: 0
@@ -174,7 +175,7 @@ Material:
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
     - _Float: 0.49
-    - _Frequency: 0.2
+    - _Frequency: 0.15
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
@@ -210,6 +211,7 @@ Material:
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _Rotation: 15
+    - _Rotation_Degrees: 10
     - _Rotation_Frequency: 0.1
     - _Rotation_Speed: 10
     - _Rotation_Z: 1
@@ -219,7 +221,7 @@ Material:
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
-    - _Speed: 2
+    - _Speed: 1.5
     - _Speed_Factor: 1
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -261,8 +263,8 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _edge1: 0.38
-    - _edge2: -5.25
+    - _edge1: 0.85
+    - _edge2: -14
     - _offset: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
