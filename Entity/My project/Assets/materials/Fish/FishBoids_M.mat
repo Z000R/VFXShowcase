@@ -220,6 +220,7 @@ Material:
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
     - _Speed: 2
+    - _Speed_Factor: 1
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -234,7 +235,7 @@ Material:
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
     - _SurfaceType: 0
-    - _Swaying_Amp: 0.02
+    - _Swaying_Amp: -0.02
     - _Swaying_Distance: 100
     - _Swaying_Frequency: 0.05
     - _Swaying_Speed: 10
