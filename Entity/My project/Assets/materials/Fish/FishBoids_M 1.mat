@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FishBoids_M
-  m_Shader: {fileID: -6465566751694194690, guid: 675f9bd2f1c572848aaa411ee75e7b13, type: 3}
+  m_Name: FishBoids_M 1
+  m_Shader: {fileID: -6465566751694194690, guid: 5e17eef2fe1227147abaae71a758a15e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -87,6 +87,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_02cfda2b8f944e9189f9065a619b6998_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: cadaa5e50fe884b4aad5547a90c5e70b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_222a9e6b3e5b4a5696e8af8764015491_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 5a0c62cb1cca0de41a4469023545c950, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -103,8 +107,16 @@ Material:
         m_Texture: {fileID: 2800000, guid: a6e2befdb80f9fe4fb14aa0f7d2d9871, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c38113ad9b384a6ca8ec4daebe3c57dd_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 90a73514b892d5447b7a7a3a48fe3f11, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_c927924b6ed64d97bd9f1c845cd342cc_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: a6e2befdb80f9fe4fb14aa0f7d2d9871, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d14f979e94234529bad0ed55e2d8caa8_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 54476621018d74f43ba061b14c43e670, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_ddf60356897147d0b2d4b94df22659ec_Texture_1_Texture2D:
@@ -175,7 +187,7 @@ Material:
     - _Boolean: 0
     - _Cell_Density: -3.97
     - _CoatMask: 0
-    - _Coat_Mask: 0.374
+    - _Coat_Mask: 0.081
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
@@ -224,8 +236,8 @@ Material:
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
-    - _Iridescence_Mask: 0.766
-    - _Iridescence_Thickness: 0.333
+    - _Iridescence_Mask: 1
+    - _Iridescence_Thickness: 1
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
     - _Metallic: 0.319
@@ -260,7 +272,7 @@ Material:
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
     - _Speed: 1.5
-    - _Speed_Factor: 0
+    - _Speed_Factor: 1
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
