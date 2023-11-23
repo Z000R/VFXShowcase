@@ -301,7 +301,7 @@ Material:
     - _Normal_strenght: 0
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
-    - _OffsetAmount: 45.1
+    - _OffsetAmount: 27.1
     - _OpaqueCullMode: 2
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15

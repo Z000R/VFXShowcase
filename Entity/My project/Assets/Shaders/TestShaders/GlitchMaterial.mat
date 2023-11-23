@@ -106,11 +106,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMapping_86669424882c4a948a12c0bd2dc913f4_Heightmap_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 5a3bf69c45126ff44b2b8211280ebf05, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_2e7ae7251fd64571bdd6ff8ec67884c6_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: e32a883a65828704ca7b40ebc9f4f876, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
