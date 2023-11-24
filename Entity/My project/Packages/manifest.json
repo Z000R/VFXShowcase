@@ -1,5 +1,15 @@
 {
-  "dependencies": {
+  "scopedRegistries": [
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [ "jp.keijiro" ]
+    }
+  ],
+  "dependencies": 
+  {
+    "jp.keijiro.lasp": "2.1.6",
+    "jp.keijiro.laspvfx": "1.0.2",
     "com.unity.cinemachine": "2.9.5",
     "com.unity.collab-proxy": "2.0.4",
     "com.unity.feature.development": "1.0.1",

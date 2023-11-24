@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ManagerScript : MonoBehaviour
+#region Variables
 {
     //variables for camera rotation
     [SerializeField]
     private float _mouseSensitivity = 3.0f;
+    [SerializeField] GameObject Camera;
 
     private float _rotationY;
     private float _rotationX;
@@ -25,21 +27,28 @@ public class ManagerScript : MonoBehaviour
 
     [SerializeField]
     private Vector2 _rotationXMinMax = new Vector2(-40, 40);
+
     // Variables for object scaling
-    public Transform targetObject;
+    public Transform sphereScale;
     public float scaleSpeed = 5.0f;
     public float minScale = 0.1f;
     public float maxScale = 20.0f;
+    public float scrollIntensity;
+    public float scaleSmoothTime = 0.1f;
+    private Vector3 currentScaleVelocity;
 
     // Variables for directional light control
     public Light directionalLight;
     public float intensitySpeed = 1.0f;
     public float maxIntensity = 5.0f;
+    private float currentIntensityVelocity;
+    public float intensitySmoothTime = 0.2f;
 
     // Variables for smooth damp
-    private Vector3 currentScaleVelocity;
-    private float currentIntensityVelocity;
-
+    [SerializeField]
+    
+    
+    #endregion 
     void Update()
     {
         float mouseX = Input.GetAxis("Mouse X") * _mouseSensitivity;
@@ -55,13 +64,13 @@ public class ManagerScript : MonoBehaviour
 
         // Apply damping between rotation changes
         _currentRotation = Vector3.SmoothDamp(_currentRotation, nextRotation, ref _smoothVelocity, _smoothTime);
-        transform.localEulerAngles = _currentRotation;
+        Camera.transform.localEulerAngles = _currentRotation;
 
         // Substract forward vector of the GameObject to point its forward vector to the target
-        transform.position = _target.position - transform.forward * _distanceFromTarget;
+        Camera.transform.position = _target.position - Camera.transform.forward * _distanceFromTarget;
 
         // Scaling with mouse wheel
-        float scrollWheel = Input.GetAxis("Mouse ScrollWheel");
+        float scrollWheel = Input.GetAxis("Mouse ScrollWheel") * scrollIntensity;
         ScaleObject(scrollWheel);
 
         // Controlling directional light intensity with right mouse button drag
@@ -75,12 +84,12 @@ public class ManagerScript : MonoBehaviour
     void ScaleObject(float scaleAmount)
     {
         // Calculate target scale
-        Vector3 targetScale = targetObject.localScale + Vector3.one * scaleAmount * scaleSpeed;
+        Vector3 targetScale = sphereScale.localScale + Vector3.one * scaleAmount * scaleSpeed;
         targetScale = Vector3.ClampMagnitude(targetScale, maxScale);
         targetScale = Vector3.Max(targetScale, Vector3.one * minScale);
 
         // Smoothly damp the scale
-        targetObject.localScale = Vector3.SmoothDamp(targetObject.localScale, targetScale, ref currentScaleVelocity, 0.1f);
+        sphereScale.localScale = Vector3.SmoothDamp(sphereScale.localScale, targetScale, ref currentScaleVelocity, scaleSmoothTime);
     }
 
     void AdjustLightIntensity(float mouseY)
@@ -90,6 +99,6 @@ public class ManagerScript : MonoBehaviour
         targetIntensity = Mathf.Clamp(targetIntensity, 0.0f, maxIntensity);
 
         // Smoothly damp the intensity
-        directionalLight.intensity = Mathf.SmoothDamp(directionalLight.intensity, targetIntensity, ref currentIntensityVelocity, 0.1f);
+        directionalLight.intensity = Mathf.SmoothDamp(directionalLight.intensity, targetIntensity, ref currentIntensityVelocity, intensitySmoothTime);
     }
 }
