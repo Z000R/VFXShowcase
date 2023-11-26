@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 798973579251860036}
   - component: {fileID: 798973579251860043}
   - component: {fileID: 8307544279364747753}
-  - component: {fileID: 8307544279364747754}
   m_Layer: 0
   m_Name: Jellyfish_VFX (1)
   m_TagString: Untagged
@@ -43,11 +42,12 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798973579251860042}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 6feb3a62166dc72439be43215c2f1ab3, type: 3}
+  m_Asset: {fileID: 0}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
+  m_AllowInstancing: 1
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
@@ -117,7 +117,7 @@ VFXRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798973579251860042}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -161,21 +161,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 8307544279364747754}
+  m_Bindings: []
   m_VisualEffect: {fileID: 798973579251860036}
---- !u!114 &8307544279364747754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798973579251860042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07c3070554d0a8944a95ff8f018c2c9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Medusa Position
-  Target: {fileID: 0}

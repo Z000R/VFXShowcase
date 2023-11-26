@@ -247,7 +247,7 @@ Material:
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
     - _DiffusionProfile: 0
-    - _DiffusionProfileHash: 3.99017
+    - _DiffusionProfileHash: 3.9075272
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
@@ -325,7 +325,7 @@ Material:
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
-    - _Speed: 1
+    - _Speed: 0
     - _Speed2: -1
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -369,7 +369,7 @@ Material:
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.28382534, g: 0.008981541, b: 0, a: 0}
     - _Color_1: {r: 3.953351, g: 0, b: 0, a: 0}
-    - _DiffusionProfileAsset: {r: -694.41174, g: -2.8006413e+22, b: 2.7147835e-26, a: 3.4189296e+30}
+    - _DiffusionProfileAsset: {r: -5.2210354e-12, g: -5.39107e+12, b: -2.138459e+27, a: 8.097354e+19}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _Dust_color: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -401,5 +401,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DiffusionProfileReferences:
-  - {fileID: 11400000, guid: 5a9a2dc462c7bde4f86d0615a19c2c72, type: 2}
+  - {fileID: 11400000, guid: e8b2b7ac9ae69cd48a1cddec7a778c60, type: 2}
   m_MaterialReferences: []
