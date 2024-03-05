@@ -28,14 +28,13 @@ public class ManagerScript : MonoBehaviour
     [SerializeField]
     private Vector2 _rotationXMinMax = new Vector2(-40, 40);
 
-    // Variables for object scaling
-    public Transform sphereScale;
-    public float scaleSpeed = 5.0f;
-    public float minScale = 0.1f;
-    public float maxScale = 20.0f;
+    
+    public float scrollSpeed = 5.0f;
+    public float minDistance = 0.1f;
+    public float maxDistance = 20.0f;
     public float scrollIntensity;
     public float scaleSmoothTime = 0.1f;
-    private Vector3 currentScaleVelocity;
+    
 
     // Variables for directional light control
     public Light directionalLight;
@@ -43,6 +42,7 @@ public class ManagerScript : MonoBehaviour
     public float maxIntensity = 5.0f;
     private float currentIntensityVelocity;
     public float intensitySmoothTime = 0.2f;
+    public float _velocity = 1f; 
 
     // Variables for smooth damp
     [SerializeField]
@@ -69,9 +69,15 @@ public class ManagerScript : MonoBehaviour
         // Substract forward vector of the GameObject to point its forward vector to the target
         Camera.transform.position = _target.position - Camera.transform.forward * _distanceFromTarget;
 
-        // Scaling with mouse wheel
-        float scrollWheel = Input.GetAxis("Mouse ScrollWheel") * scrollIntensity;
-        ScaleObject(scrollWheel);
+        // Get the scroll wheel input.
+        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+
+        // Use SmoothDamp to smoothly interpolate between the current distance and the target distance.
+        _distanceFromTarget = Mathf.SmoothDamp(_distanceFromTarget, _distanceFromTarget - scrollInput * scrollSpeed,
+            ref _velocity, scaleSmoothTime);
+
+        // Clamp the distance to ensure it stays within the specified range.
+        _distanceFromTarget = Mathf.Clamp(_distanceFromTarget, minDistance, maxDistance);
 
         // Controlling directional light intensity with right mouse button drag
         if (Input.GetMouseButton(1))
@@ -80,23 +86,14 @@ public class ManagerScript : MonoBehaviour
             AdjustLightIntensity(_mouseY);
         }
     }
-
-    void ScaleObject(float scaleAmount)
-    {
-        // Calculate target scale
-        Vector3 targetScale = sphereScale.localScale + Vector3.one * scaleAmount * scaleSpeed;
-        targetScale = Vector3.ClampMagnitude(targetScale, maxScale);
-        targetScale = Vector3.Max(targetScale, Vector3.one * minScale);
-
-        // Smoothly damp the scale
-        sphereScale.localScale = Vector3.SmoothDamp(sphereScale.localScale, targetScale, ref currentScaleVelocity, scaleSmoothTime);
-    }
-
+    
+    
     void AdjustLightIntensity(float mouseY)
     {
+        //Debug.Log("MouseY: " + mouseY);
         // Calculate target intensity
         float targetIntensity = directionalLight.intensity + mouseY * intensitySpeed;
-        targetIntensity = Mathf.Clamp(targetIntensity, 0.0f, maxIntensity);
+        targetIntensity = Mathf.Clamp(targetIntensity, 0.0f, maxIntensity); 
 
         // Smoothly damp the intensity
         directionalLight.intensity = Mathf.SmoothDamp(directionalLight.intensity, targetIntensity, ref currentIntensityVelocity, intensitySmoothTime);

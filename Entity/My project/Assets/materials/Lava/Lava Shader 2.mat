@@ -35,7 +35,7 @@ Material:
   m_InvalidKeywords:
   - _MATERIAL_FEATURE_TRANSMISSION
   - _NORMALMAP_TANGENT_SPACE
-  m_LightmapFlags: 1
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -223,7 +223,7 @@ Material:
     - _ATDistance: 1.01
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
-    - _Alpha: 0.25
+    - _Alpha: 0.314
     - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 0
     - _AlphaCutoffPostpass: 0.5
@@ -234,7 +234,7 @@ Material:
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _Blend: 3.66
+    - _Blend: 3.54
     - _BlendMode: 0
     - _CoatMask: 0
     - _Coat_Mask: 0.512
@@ -247,7 +247,7 @@ Material:
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
     - _DiffusionProfile: 0
-    - _DiffusionProfileHash: 3.99017
+    - _DiffusionProfileHash: 3.9075272
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
@@ -270,7 +270,7 @@ Material:
     - _Float_1: 0.9
     - _Float_2: 9
     - _Float_3: 0
-    - _Fresnel_Mask: 2.6
+    - _Fresnel_Mask: 7
     - _Fresnel_Strenght: 5.8
     - _Gradient_Edge1: 8.44
     - _Gradient_Edge_2: 0.05
@@ -315,8 +315,8 @@ Material:
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
     - _Rotation: 0
-    - _Scale: 4.13
-    - _Scale2: 2.18
+    - _Scale: 5.03
+    - _Scale2: 9.7
     - _Smooth_Edge1: -0.1
     - _Smooth_Edge12: -0.1
     - _Smoothness: 1
@@ -325,8 +325,9 @@ Material:
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
-    - _Speed: 0.001
-    - _Speed2: -0.001
+    - _Speed: 0.2
+    - _Speed2: -0.2
+    - _Speed_Factor: 2
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
@@ -364,22 +365,23 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
+    - _lowPassValue: 0.285295
     m_Colors:
     - _BaseColor: {r: 0.21960783, g: 0.21960783, b: 0.21960783, a: 0}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.28382534, g: 0.008981541, b: 0, a: 0}
     - _Color_1: {r: 3.953351, g: 0, b: 0, a: 0}
-    - _DiffusionProfileAsset: {r: -694.41174, g: -2.8006413e+22, b: 2.7147835e-26, a: 3.4189296e+30}
+    - _DiffusionProfileAsset: {r: -5.2210354e-12, g: -5.39107e+12, b: -2.138459e+27, a: 8.097354e+19}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
-    - _Dust_color: {r: 333.8545, g: 43.69824, b: 289.52594, a: 0}
+    - _Dust_color: {r: 0.7490196, g: 0.09803923, b: 0.6495663, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
-    - _Glow_Colour: {r: 0, g: 349525.62, b: 392702.28, a: 1}
-    - _Gradient_Strenght: {r: 11468.019, g: 0, b: 24543.877, a: 0}
+    - _Glow_Colour: {r: 0, g: 1012.05756, b: 199.17918, a: 1}
+    - _Gradient_Strenght: {r: 0.025759425, g: 0.056175776, b: 0.08150744, a: 0}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _Light_Color: {r: 102.75575, g: 102.75575, b: 102.75575, a: 0}
+    - _Light_Color: {r: 21.097654, g: 178.90813, b: 119.13405, a: 0}
     - _Liquid_Colour: {r: 1012.0572, g: 291.2051, b: 291.2051, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
@@ -401,5 +403,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DiffusionProfileReferences:
-  - {fileID: 11400000, guid: 5a9a2dc462c7bde4f86d0615a19c2c72, type: 2}
+  - {fileID: 11400000, guid: e8b2b7ac9ae69cd48a1cddec7a778c60, type: 2}
   m_MaterialReferences: []

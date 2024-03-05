@@ -8,4 +8,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fish.unity
     guid: 2cdd3509153fc904a990dda604ab6ba4
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b7dce0d064deaa7468742923900d0fd2, type: 2}
